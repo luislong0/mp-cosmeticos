@@ -6,7 +6,7 @@ export function Footer() {
   return (
     <footer className="flex flex-col items-center justify-around bg-zinc-950 px-20 py-10 text-white">
       <div className="mx-auto grid w-full grid-cols-2 gap-10 md:grid-cols-4">
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-start sm:items-center">
           <div>
             <h5 className="mb-3 text-lg font-bold text-rose-400">Empresa</h5>
             <ul>
@@ -36,7 +36,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.google.com.br/maps/place/R.+Pedro+Machado+da+Silva,+502+-+Palmital,+SP,+19970-000/@-22.7934439,-50.2233877,18z/data=!4m5!3m4!1s0x94954d2afe61426f:0xf43fc7135f8c2c00!8m2!3d-22.7940026!4d-50.2223269?entry=ttu"
+                  href="https://www.google.com.br/maps/place/Palmital,+SP,+19970-000/@-22.7884181,-50.2269324,15z/data=!3m1!4b1!4m6!3m5!1s0x94954d2f44590015:0x363ee8dfc7f163ed!8m2!3d-22.7881823!4d-50.2189581!16zL20vMDQ0MHR3?entry=ttu"
                   className="transition-all hover:text-rose-400 hover:underline"
                   target="_blank"
                   rel="noreferrer"
@@ -47,7 +47,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-start sm:items-center">
           <div>
             <h5 className="mb-3 text-lg font-bold text-rose-400">Produtos</h5>
             <ul>
@@ -71,7 +71,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-start sm:items-center">
           <div>
             <h5 className="mb-3 text-lg font-bold text-rose-400">Suporte</h5>
             <ul>
@@ -86,7 +86,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex flex-col items-start sm:items-center">
           <div>
             <h5 className="mb-3 text-lg font-bold text-rose-400">Siga-nos</h5>
             <ul className="flex justify-between space-x-3">
