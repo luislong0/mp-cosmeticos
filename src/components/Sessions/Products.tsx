@@ -34,7 +34,7 @@ export function Products() {
           a chave para a descoberta da verdadeira beleza dos seus cabelos. A
           jornada para o cabelo dos sonhos começa aqui,
         </span>
-        <div className="flex flex-wrap items-start justify-between gap-10 sm:gap-0">
+        <div className="flex flex-wrap items-start justify-between gap-10 sm:gap-x-0 sm:gap-y-10">
           <PopularProductCard
             title="Perfume Capilar GLAMOUR Luisot"
             img={productImage1}

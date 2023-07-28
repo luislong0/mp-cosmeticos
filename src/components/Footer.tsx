@@ -83,6 +83,16 @@ export function Footer() {
                   Contato
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://contate.me/mp-cosmeticos"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="transition-all hover:text-rose-400 hover:underline"
+                >
+                  Atendimento Online
+                </a>
+              </li>
             </ul>
           </div>
         </div>
