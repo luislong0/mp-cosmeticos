@@ -59,7 +59,7 @@ export function Products() {
 
         <div className="flex flex-col gap-2 text-xl font-medium">
           <h3 className="bg-rose-gradient bg-clip-text text-4xl font-extrabold uppercase text-transparent">
-            Nossos Catálogo!
+            Catálogo
           </h3>
 
           <p>
