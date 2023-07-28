@@ -1,6 +1,7 @@
 interface SocialMediaProps {
   socialMedia: 'Instagram' | 'WhatsApp'
   name: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   svg: any
 }
 
@@ -9,7 +10,9 @@ export function SocialMedia({ name, socialMedia, svg }: SocialMediaProps) {
     <div>
       {socialMedia === 'Instagram' && (
         <a
-          href={''}
+          href="https://www.instagram.com/mpcosmeticos.ofc/"
+          target="_blank"
+          rel="noreferrer"
           className="flex h-14 max-w-fit items-center justify-center gap-3 rounded-md bg-rose-400 px-6 py-3 font-bold text-white transition-all hover:scale-105 hover:bg-rose-500 hover:text-white"
         >
           {svg}
@@ -19,7 +22,9 @@ export function SocialMedia({ name, socialMedia, svg }: SocialMediaProps) {
 
       {socialMedia === 'WhatsApp' && (
         <a
-          href={''}
+          href={'https://contate.me/mp-cosmeticos'}
+          target="_blank"
+          rel="noreferrer"
           className="flex h-14 max-w-fit items-center justify-center gap-3 rounded-md bg-rose-400 px-6 py-3 font-bold text-white transition-all hover:scale-105 hover:bg-rose-500 hover:text-white"
         >
           {svg}

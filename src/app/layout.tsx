@@ -1,6 +1,10 @@
+import { Footer } from '@/components/Footer'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter, Roboto } from 'next/font/google'
+import { Roboto } from 'next/font/google'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+import { config } from '@fortawesome/fontawesome-svg-core'
+config.autoAddCss = false
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -21,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto.className} bg-zinc-100`}>
         <div>{children}</div>
+        <Footer />
       </body>
     </html>
   )

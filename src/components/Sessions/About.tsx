@@ -17,7 +17,7 @@ export function About() {
   }, [])
 
   return (
-    <div className="w-full bg-zinc-950 px-10 py-40">
+    <div id="about" className="w-full bg-zinc-950 px-10 py-40">
       <div
         data-aos="zoom-in"
         className="mx-auto flex max-w-[1400px] flex-col-reverse gap-20 sm:flex-row"

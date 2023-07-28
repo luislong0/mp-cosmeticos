@@ -14,6 +14,7 @@ export function Hero() {
 
   return (
     <div
+      id="home"
       className={`flex w-full min-w-full items-center justify-center bg-red-500 bg-[url(/heroImage.jpg)] bg-right px-5 py-20 sm:h-[calc(100vh_-_5rem)]`}
     >
       <div
