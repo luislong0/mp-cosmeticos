@@ -36,7 +36,7 @@ export function About() {
             produtos e sinta a diferença em cada fio.
           </span>
 
-          <div className="flex items-center gap-2 sm:gap-10">
+          <div className="flex w-full flex-col items-center gap-5 sm:flex-row sm:gap-10">
             <SocialMedia
               socialMedia="Instagram"
               name="Instagram"
