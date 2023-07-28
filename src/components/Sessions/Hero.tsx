@@ -15,15 +15,17 @@ export function Hero() {
   return (
     <div
       id="home"
-      className={`flex w-full min-w-full items-center justify-center bg-red-500 bg-[url(/heroImage.jpg)] bg-right px-16 py-20 sm:h-[calc(100vh_-_5rem)]`}
+      className={`flex w-full items-center justify-center bg-[url(/heroImage.jpg)] bg-right py-20 sm:h-[calc(100vh_-_5rem)]`}
     >
       <div
         data-aos="zoom-in"
-        className="flex flex-col items-center justify-center gap-10 text-center text-zinc-100"
+        className="flex flex-col items-center justify-center gap-10 px-20 text-center text-zinc-100"
       >
         <h2 className="max-w-6xl text-6xl font-bold uppercase sm:text-6xl">
           Desperte a Beleza dos seus Cabelos <br /> com a{' '}
-          <b className="text-6xl text-rose-950 sm:text-7xl">MP Cosméticos</b>
+          <b className="text-6xl font-extrabold text-rose-950 sm:text-7xl">
+            MP Cosméticos
+          </b>
         </h2>
         <span className="max-w-6xl text-2xl font-bold sm:text-3xl">
           Seja profissional de salão ou buscando o melhor para seus fios em
