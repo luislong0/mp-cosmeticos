@@ -80,7 +80,7 @@ export default function Navbar() {
             <div className="hidden items-center justify-center sm:ml-6 sm:flex">
               <div className="flex items-center justify-center">
                 <a
-                  href="#"
+                  href="#home"
                   className="text-md rounded-md px-3 py-2 font-medium text-gray-300 transition duration-150 ease-in-out hover:bg-rose-400 hover:text-white focus:bg-rose-400 focus:text-white focus:outline-none"
                 >
                   Home
@@ -92,19 +92,19 @@ export default function Navbar() {
                   Catalogo
                 </a>
                 <a
-                  href="#"
+                  href="#about"
                   className="text-md ml-4 rounded-md px-3 py-2 font-medium text-gray-300 transition duration-150 ease-in-out hover:bg-rose-400 hover:text-white focus:bg-rose-400 focus:text-white focus:outline-none"
                 >
                   Sobre
                 </a>
                 <a
-                  href="#"
+                  href="#products"
                   className="text-md ml-4 rounded-md px-3 py-2 font-medium text-gray-300 transition duration-150 ease-in-out hover:bg-rose-400 hover:text-white focus:bg-rose-400 focus:text-white focus:outline-none"
                 >
                   Produtos
                 </a>
                 <a
-                  href="#"
+                  href="#contact"
                   className="text-md ml-4 rounded-md px-3 py-2 font-medium text-gray-300 transition duration-150 ease-in-out hover:bg-rose-400 hover:text-white focus:bg-rose-400 focus:text-white focus:outline-none"
                 >
                   Contato
@@ -124,7 +124,7 @@ export default function Navbar() {
       >
         <div className="px-2 pb-3 pt-2">
           <a
-            href="#"
+            href="#home"
             className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 transition duration-150 ease-in-out hover:bg-rose-400 focus:bg-rose-400 focus:text-white focus:outline-none"
           >
             Home
@@ -138,21 +138,21 @@ export default function Navbar() {
           </a>
           <div className="my-1 h-[1px] w-full bg-zinc-600" />
           <a
-            href="#"
+            href="#about"
             className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-300 transition duration-150 ease-in-out hover:bg-rose-400 hover:text-white focus:bg-rose-400 focus:text-white focus:outline-none"
           >
             Sobre
           </a>
           <div className="my-1 h-[1px] w-full bg-zinc-600" />
           <a
-            href="#"
+            href="#products"
             className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-300 transition duration-150 ease-in-out hover:bg-rose-400 hover:text-white focus:bg-rose-400 focus:text-white focus:outline-none"
           >
             Produtos
           </a>
           <div className="my-1 h-[1px] w-full bg-zinc-600" />
           <a
-            href="#"
+            href="#contact"
             className="mt-1 block rounded-md px-3 py-2 text-base font-medium text-gray-300 transition duration-150 ease-in-out hover:bg-rose-400 hover:text-white focus:bg-rose-400 focus:text-white focus:outline-none"
           >
             Contato

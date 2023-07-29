@@ -16,7 +16,7 @@ export function Products() {
   }, [])
 
   return (
-    <div className="w-full max-w-full bg-zinc-100 px-10 py-20">
+    <div id="products" className="w-full max-w-full bg-zinc-100 px-10 py-20">
       <div
         data-aos="zoom-in"
         className="mx-auto flex max-w-[1400px] flex-col gap-20"
