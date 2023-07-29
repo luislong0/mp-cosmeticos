@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css'
 export default function Home() {
   return (
     <>
-      <main className="flex min-h-screen w-full flex-col">
+      <main className="flex min-h-screen w-full max-w-full flex-col overflow-hidden">
         <Navbar />
         <div className="w-full">
           <Hero />

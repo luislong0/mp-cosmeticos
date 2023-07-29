@@ -16,15 +16,15 @@ export function Products() {
   }, [])
 
   return (
-    <div className="w-full bg-zinc-100 px-10 py-20">
+    <div className="w-full max-w-full bg-zinc-100 px-10 py-20">
       <div
         data-aos="zoom-in"
         className="mx-auto flex max-w-[1400px] flex-col gap-20"
       >
-        <h2 className="bg-rose-gradient bg-clip-text text-6xl font-extrabold uppercase text-transparent">
+        <h2 className="bg-rose-gradient bg-clip-text text-5xl font-extrabold uppercase text-transparent sm:text-6xl">
           Nossos Produtos!
         </h2>
-        <span className="-mt-14 text-2xl font-bold">
+        <span className="-mt-14 text-xl font-bold sm:text-2xl">
           Explore nossa seleção cuidadosamente curada dos melhores produtos de
           cosméticos para cabelos. Desde luxuosos kits de uso pessoal, ideais
           para nutrir e revigorar cada tipo de cabelo, até nossa exclusiva linha
@@ -57,8 +57,8 @@ export function Products() {
           />
         </div>
 
-        <div className="flex flex-col gap-2 text-xl font-medium">
-          <h3 className="bg-rose-gradient bg-clip-text text-5xl font-extrabold uppercase text-transparent">
+        <div className="flex flex-col gap-2 text-lg font-medium sm:text-xl">
+          <h3 className="bg-rose-gradient bg-clip-text text-4xl font-extrabold uppercase text-transparent sm:text-5xl">
             Catálogo
           </h3>
 

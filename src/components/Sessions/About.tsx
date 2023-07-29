@@ -17,16 +17,16 @@ export function About() {
   }, [])
 
   return (
-    <div id="about" className="w-full bg-zinc-950 px-10 py-40">
+    <div id="about" className="w-full max-w-full bg-zinc-950 px-10 py-40">
       <div
         data-aos="zoom-in"
         className="mx-auto flex max-w-[1400px] flex-col-reverse gap-20 sm:flex-row"
       >
         <div className="flex flex-col gap-8">
-          <h2 className="text-6xl font-extrabold uppercase text-rose-400">
+          <h2 className="text-5xl font-extrabold uppercase text-rose-400 sm:text-6xl">
             Sobre a empresa!
           </h2>
-          <span className="text-2xl font-medium text-zinc-300">
+          <span className="text-xl font-medium text-zinc-300 sm:text-2xl">
             A MP Cosméticos, líder em beleza e bem-estar, une a excelência
             profissional à simplicidade dos cuidados diários. Como uma
             proeminente vendedora e distribuidora de cosméticos para cabelo,

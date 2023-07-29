@@ -14,17 +14,17 @@ export function Contact() {
   }, [])
 
   return (
-    <div id="contact" className="w-full bg-rose-400 px-10 py-20">
+    <div id="contact" className="w-full max-w-full bg-rose-400 px-10 py-20">
       <div
         data-aos="zoom-in"
         className="mx-auto flex max-w-[1400px] flex-col gap-20 xl:flex-row"
       >
         <div className="flex flex-col items-center justify-center gap-10 xl:max-w-[800px]">
           <div className="flex flex-col gap-20">
-            <h2 className="text-6xl font-extrabold uppercase text-rose-950">
+            <h2 className="text-5xl font-extrabold uppercase text-rose-950 sm:text-6xl">
               Entre em contato!
             </h2>
-            <span className="-mt-14 text-2xl font-bold text-zinc-100">
+            <span className="-mt-14 text-xl font-bold text-zinc-100 sm:text-2xl">
               <b className="text-rose-950">Estamos Aqui Para Você! </b> <br />{' '}
               Se você tem perguntas, nós temos respostas. Seja uma dúvida sobre
               o produto mais adequado para o seu tipo de pele, uma curiosidade
