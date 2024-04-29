@@ -13,5 +13,7 @@ export async function GET(request: NextRequest) {
     return product.title.toLocaleLowerCase().includes(query.toLocaleLowerCase())
   })
 
-  return Response.json(products)
+  return new Response(JSON.stringify(products), {
+    headers: { 'Content-Type': 'application/json' },
+  })
 }
