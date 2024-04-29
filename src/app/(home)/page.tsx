@@ -1,11 +1,15 @@
 import Navbar from '@/components/Navbar'
 import { Hero } from '@/components/Sessions/Hero'
-import './globals.css'
 import { About } from '@/components/Sessions/About'
 import { Products } from '@/components/Sessions/Products'
 import { Contact } from '@/components/Sessions/Contact'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Home',
+}
 
 export default function Home() {
   return (

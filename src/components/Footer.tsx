@@ -1,10 +1,17 @@
 import { Instagram } from 'lucide-react'
 import { faTiktok } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { ComponentProps } from 'react'
+import { twMerge } from 'tailwind-merge'
 
-export function Footer() {
+export function Footer({ className, ...props }: ComponentProps<'footer'>) {
   return (
-    <footer className="flex flex-col items-center justify-around bg-zinc-950 px-20 py-10 text-white">
+    <footer
+      className={twMerge(
+        'flex flex-col items-center justify-around bg-zinc-950 px-20 py-10 text-white',
+        className,
+      )}
+    >
       <div className="mx-auto grid w-full grid-cols-2 gap-10 md:grid-cols-4">
         <div className="flex flex-col items-start sm:items-center">
           <div>
