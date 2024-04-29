@@ -12,8 +12,15 @@ export async function GET(
   const product = data.products.find((product) => product.slug === slug)
 
   if (!product) {
-    Response.json({ message: 'Product not found.' }, { status: 400 })
+    // Aqui você precisa retornar a resposta usando 'new Response' ou apenas 'Response'
+    return new Response(JSON.stringify({ message: 'Product not found.' }), {
+      status: 404,
+      headers: { 'Content-Type': 'application/json' },
+    })
   }
 
-  return Response.json(product)
+  // Aqui você retorna a resposta com o produto encontrado, garantindo que o tipo de conteúdo seja JSON
+  return new Response(JSON.stringify(product), {
+    headers: { 'Content-Type': 'application/json' },
+  })
 }
