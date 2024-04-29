@@ -16,7 +16,10 @@ export async function GET(_: Request, { params }: { params: { id: string } }) {
   console.log(products)
 
   if (!products) {
-    Response.json({ message: 'Product not found.' }, { status: 400 })
+    Response.json(
+      { message: 'Product not found.' },
+      { status: 400, headers: { 'Content-Type': 'application/json' } },
+    )
   }
 
   return Response.json(products)
