@@ -19,20 +19,18 @@ async function getProduct(slug: string) {
   })
 
   if (!response.ok) {
-    throw new Error(`HTTP error! status: ${response.status}`)
+    console.error(`HTTP error! Status: ${response.status}`)
+    return null // Retorne nulo ou lance um erro dependendo do seu caso de uso
   }
 
-  if (response.status === 404) {
-    // Produto não encontrado
-    return <div>Product not found.</div>
-  }
-
-  if (!response.headers.get('content-type')?.includes('application/json')) {
-    throw new Error('Não recebi um JSON!')
+  // Verifica se a resposta é JSON antes de tentar analisar
+  const contentType = response.headers.get('content-type')
+  if (!contentType || !contentType.includes('application/json')) {
+    console.error('Failed to receive JSON, received:', contentType)
+    return null
   }
 
   const product = await response.json()
-
   return product
 }
 
