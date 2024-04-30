@@ -3,8 +3,6 @@ import { Hero } from '@/components/Sessions/Hero'
 import { About } from '@/components/Sessions/About'
 import { Products } from '@/components/Sessions/Products'
 import { Contact } from '@/components/Sessions/Contact'
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -23,19 +21,6 @@ export default function Home() {
           <Contact />
         </div>
       </main>
-
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="dark"
-      />
     </>
   )
 }

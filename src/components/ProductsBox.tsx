@@ -6,6 +6,7 @@ import { NoBgButton } from './Buttons/NoBgButton'
 import { Separator } from './Separator'
 import { useState } from 'react'
 import { ProductBox } from './ProductBox'
+import { AlertOctagon } from 'lucide-react'
 
 interface ProductCategory {
   id: string
@@ -107,6 +108,17 @@ export function ProductsBox() {
                 />
               ))}
             </div>
+          </div>
+        )}
+
+        {products.length === 0 && (
+          <div>
+            <span className="flex flex-col items-center gap-4 text-zinc-600">
+              <span className="text-zinc-800">
+                <AlertOctagon size={40} strokeWidth={3} />
+              </span>
+              Nenhum produto encontrado. Selecione alguma categoria
+            </span>
           </div>
         )}
       </div>

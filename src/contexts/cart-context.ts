@@ -12,6 +12,7 @@ export interface Product {
 type Store = {
   products: Product[]
   addProducts: (product: Product) => void
+  removeProducts: (productId: string) => void
 }
 
 export const cartStore = create<Store>()((set) => ({
@@ -35,4 +36,9 @@ export const cartStore = create<Store>()((set) => ({
         return { products: [...state.products, newProduct] }
       }
     }),
+  removeProducts: (productId: string) => {
+    set((state) => ({
+      products: state.products.filter((product) => product.id !== productId),
+    }))
+  },
 }))

@@ -1,7 +1,6 @@
 import { api } from '@/app/data/api'
 import { Product } from '@/app/data/types/product'
-import { AddToCartButton } from '@/components/AddToCartButton'
-import { GoToWhatsBtn } from '@/components/GoToWhatsBtn'
+import { ProductDescriptionBox } from '@/components/ProductDescriptionBox'
 import { Metadata } from 'next'
 import Image from 'next/image'
 
@@ -11,7 +10,7 @@ interface ProductProps {
   }
 }
 
-async function getProduct(slug: string) {
+async function getProduct(slug: string): Promise<Product | null> {
   const response = await api(`/products/${slug}`, {
     next: {
       revalidate: 60 * 60, // 1 hour
@@ -39,7 +38,7 @@ export async function generateMetadata({
 }: ProductProps): Promise<Metadata> {
   const product = await getProduct(params.slug)
   return {
-    title: product.title,
+    title: product ? product.title : 'Product not found',
   }
 }
 
@@ -61,7 +60,7 @@ export default async function ProductPage({ params }: ProductProps) {
   }
 
   return (
-    <div className="relative flex min-h-[600px] grid-cols-2 flex-col content-center items-center gap-20 lg:grid xl:min-h-[860px] xl:grid-cols-3">
+    <div className="relative flex min-h-[600px] grid-cols-2 flex-col content-center items-center gap-10 lg:grid xl:min-h-[860px] xl:grid-cols-3">
       <div className="col-span-1 overflow-hidden xl:col-span-2">
         <Image
           className="rounded-3xl"
@@ -73,7 +72,7 @@ export default async function ProductPage({ params }: ProductProps) {
         />
       </div>
 
-      <div className="flex flex-col justify-center px-5 md:px-12">
+      {/* <div className="flex w-full flex-col justify-center px-5">
         <h1 className="text-3xl font-bold leading-tight">{product.title}</h1>
 
         <p className="mt-2 leading-relaxed text-zinc-400">
@@ -132,7 +131,15 @@ export default async function ProductPage({ params }: ProductProps) {
             ]}
           />
         </div>
-      </div>
+      </div> */}
+
+      <ProductDescriptionBox
+        description={product.description}
+        id={String(product.id)}
+        image={product.image}
+        sizes={product.sizes}
+        title={product.title}
+      />
     </div>
   )
 }

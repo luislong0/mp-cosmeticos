@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 config.autoAddCss = false
 
@@ -26,6 +28,19 @@ export default function RootLayout({
       <body className={`${roboto.className} bg-zinc-100`}>
         <div>{children}</div>
       </body>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </html>
   )
 }

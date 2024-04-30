@@ -8,7 +8,7 @@ export function WhatsProductsBox() {
 
   return (
     <div className="w-full px-6 py-10">
-      <GoToWhatsBtn products={products} />
+      <GoToWhatsBtn disabled={products.length === 0} products={products} />
     </div>
   )
 }

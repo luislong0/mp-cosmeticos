@@ -2,7 +2,6 @@ import { CartWidget } from '@/components/CartWidget'
 import * as Dialog from '@radix-ui/react-dialog'
 import { ShoppingBag, X } from 'lucide-react'
 import { CartProducts } from './components/CartProducts'
-import { GoToWhatsBtn } from '@/components/GoToWhatsBtn'
 import { WhatsProductsBox } from './components/WhatsProductsBox'
 
 export function CartDrawer() {

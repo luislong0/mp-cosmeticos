@@ -5,7 +5,5 @@ export async function GET() {
 
   const featuredProducts = data.products.filter((product) => product.featured)
 
-  return new Response(JSON.stringify(featuredProducts), {
-    headers: { 'Content-Type': 'application/json' },
-  })
+  return Response.json(featuredProducts)
 }
