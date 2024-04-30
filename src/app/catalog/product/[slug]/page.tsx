@@ -11,16 +11,29 @@ interface ProductProps {
   }
 }
 
-async function getProduct(slug: string): Promise<Product> {
+async function getProduct(slug: string) {
   const response = await api(`/products/${slug}`, {
     next: {
       revalidate: 60 * 60, // 1 hour
     },
   })
 
-  const responseBody = await response.json()
-  console.log(responseBody)
-  return responseBody
+  if (!response.ok) {
+    throw new Error(`HTTP error! status: ${response.status}`)
+  }
+
+  if (response.status === 404) {
+    // Produto não encontrado
+    return <div>Product not found.</div>
+  }
+
+  if (!response.headers.get('content-type')?.includes('application/json')) {
+    throw new Error('Não recebi um JSON!')
+  }
+
+  const product = await response.json()
+
+  return product
 }
 
 export async function generateMetadata({
