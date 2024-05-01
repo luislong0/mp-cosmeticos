@@ -33,7 +33,7 @@ export async function FeaturedProductsBox() {
             width={1400}
             height={1400}
             quality={100}
-            className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
+            className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
           />
 
           <div className="absolute bottom-10 right-auto flex h-12 max-w-[280px] items-center gap-2 rounded-full border-2 border-zinc-500 bg-black/60 p-1 pl-5 md:bottom-28 md:right-28">
@@ -57,7 +57,7 @@ export async function FeaturedProductsBox() {
                 width={400}
                 height={400}
                 quality={100}
-                className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                className="h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
 
               <div className="absolute bottom-10 right-auto flex h-12 max-w-[280px] items-center gap-2 rounded-full border-2 border-zinc-500 bg-black/60 p-1 pl-5 md:right-10">

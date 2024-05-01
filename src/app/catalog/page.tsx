@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   title: 'Catálogo',
 }
 
+setTimeout(() => {
+  console.log('Executado após 5 segundos!')
+}, 20000)
+
 export default async function Catalog() {
   return (
     <div className="flex h-full flex-col items-center justify-center">
