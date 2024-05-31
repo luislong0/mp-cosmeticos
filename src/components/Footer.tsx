@@ -19,7 +19,7 @@ export function Footer({ className, ...props }: ComponentProps<'footer'>) {
             <ul>
               <li>
                 <a
-                  href="#home"
+                  href="/#home"
                   className="transition-all hover:text-rose-400 hover:underline"
                 >
                   Home
@@ -27,7 +27,7 @@ export function Footer({ className, ...props }: ComponentProps<'footer'>) {
               </li>
               <li>
                 <a
-                  href="#about"
+                  href="/#about"
                   className="transition-all hover:text-rose-400 hover:underline"
                 >
                   Sobre nós
@@ -35,7 +35,7 @@ export function Footer({ className, ...props }: ComponentProps<'footer'>) {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/#products"
                   className="transition-all hover:text-rose-400 hover:underline"
                 >
                   Produtos
@@ -60,7 +60,7 @@ export function Footer({ className, ...props }: ComponentProps<'footer'>) {
             <ul>
               <li>
                 <a
-                  href="#"
+                  href="/catalog"
                   className="transition-all hover:text-rose-400 hover:underline"
                 >
                   Catálogo
@@ -84,7 +84,7 @@ export function Footer({ className, ...props }: ComponentProps<'footer'>) {
             <ul>
               <li>
                 <a
-                  href="#contact"
+                  href="/#contact"
                   className="transition-all hover:text-rose-400 hover:underline"
                 >
                   Contato
@@ -126,7 +126,7 @@ export function Footer({ className, ...props }: ComponentProps<'footer'>) {
         </div>
       </div>
       <div className="mt-5 text-center">
-        <p>© 2023 MP Cosméticos. Todos os direitos reservados.</p>
+        <p>© 2024 MP Cosméticos. Todos os direitos reservados.</p>
       </div>
 
       <span className="mt-10">

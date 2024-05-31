@@ -37,7 +37,7 @@ export function Hero() {
         </span>
 
         <div>
-          <ChangeColorButton href="" />
+          <ChangeColorButton href="/catalog" />
         </div>
       </div>
     </div>

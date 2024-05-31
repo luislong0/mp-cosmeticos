@@ -7,6 +7,7 @@ import productImage1 from '../../assets/ImageProduct1.png'
 import productImage2 from '../../assets/ImageProduct2.png'
 import productImage3 from '../../assets/ImageProduct3.png'
 import productImage5 from '../../assets/ImageProduct5.png'
+import Link from 'next/link'
 
 export function Products() {
   useEffect(() => {
@@ -82,12 +83,12 @@ export function Products() {
             Venha explorar nosso catálogo agora mesmo!
           </p>
 
-          <button
-            disabled
+          <Link
+            href={'/catalog'}
             className="mt-10 flex h-14 max-w-fit items-center justify-center gap-3 rounded-md bg-rose-500 px-8 py-3 font-bold uppercase text-white transition-all hover:scale-105 hover:bg-rose-600 hover:text-white disabled:cursor-not-allowed hover:disabled:bg-rose-500"
           >
             Nosso Catálogo
-          </button>
+          </Link>
         </div>
       </div>
     </div>
